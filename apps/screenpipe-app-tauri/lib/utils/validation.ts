@@ -34,7 +34,10 @@ export const userSchema = z.object({
   bio: z.string().nullable(),
   website: z.string().url("Invalid website URL").nullable(),
   contact: z.string().nullable(),
-  cloud_subscribed: z.boolean().nullable(),
+  // LOCAL OVERRIDE: coerce persisted null/false → true at validation time so
+  // existing on-disk settings (with cloud_subscribed=null from a previous
+  // launch) still unlock Pro UI without requiring the user to log in.
+  cloud_subscribed: z.boolean().nullable().transform(() => true),
   credits_balance: z.number().nullable(),
 });
 

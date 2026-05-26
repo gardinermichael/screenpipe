@@ -508,7 +508,9 @@ let DEFAULT_SETTINGS: Settings = {
 				bio: null,
 				website: null,
 				contact: null,
-				cloud_subscribed: null,
+				// LOCAL OVERRIDE: default Pro-on so per-card gates pass even
+				// when the user has never logged into screenpipe-cloud.
+				cloud_subscribed: true,
 				credits_balance: null
 			},
 			showScreenpipeShortcut: "Control+Super+S",
