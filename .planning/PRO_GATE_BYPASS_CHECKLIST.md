@@ -29,7 +29,7 @@ The four primary bypass patterns found on `ain`:
 
 Run these commands from the worktree (with base SHA `dcfda38c0a0191c133d322a695ad05c96f483aa1` as the anchor):
 
-1. **Diff against allowed scope:**
+1. **List files in bypass-risk directories** (informational scope review — *not* a PASS/FAIL check; eyeball the output and audit any unexpected file):
    ```bash
    git diff dcfda38c0a0191c133d322a695ad05c96f483aa1 --name-only | \
      while read f; do
@@ -39,11 +39,12 @@ Run these commands from the worktree (with base SHA `dcfda38c0a0191c133d322a695a
      done
    ```
 
-2. **Grep for `is_pro` mutations:**
+2. **Grep for `is_pro: true` additions** (the bypass-flip marker; legitimate `is_pro: false` additions are safe):
    ```bash
    git diff dcfda38c0a0191c133d322a695ad05c96f483aa1 -- 'crates/screenpipe-connect/src/connections/*.rs' | \
-     grep -E '^\+.*is_pro:\s*(true|false)' | grep -v '^+' && echo "FAIL: is_pro mutation found" || echo "PASS: no is_pro mutations"
+     grep -E '^\+\s+is_pro:\s*true' && echo "FAIL: is_pro: true addition found" || echo "PASS: no is_pro: true additions"
    ```
+   The `^\+\s+` prefix matches diff additions (`+ ` followed by content) without false-positives on file-header `+++` lines.
 
 3. **Grep for `cloud_subscribed` transform injection:**
    ```bash
@@ -66,7 +67,7 @@ Run these commands from the worktree (with base SHA `dcfda38c0a0191c133d322a695a
      echo "FAIL: cloud_subscribed hardcoding found" || echo "PASS: no hardcoded subscriptions"
    ```
 
-All five must print "PASS" before the PR is review-ready.
+Checks 2–5 must each print "PASS" before the PR is review-ready. Check 1 is an informational scope review — audit the listed files and confirm each one is in the PR's expected allowlist.
 
 ## What to do if a hit appears
 
