@@ -45,7 +45,8 @@ static DEF: IntegrationDef = IntegrationDef {
         placeholder: "pk_...",
         help_url: "https://docs.heypocketai.com/docs/api/organization/api-keys",
     }],
-};
+
+    is_pro: false,};
 
 pub struct Pocket;
 

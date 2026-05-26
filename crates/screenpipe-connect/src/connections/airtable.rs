@@ -30,7 +30,8 @@ static DEF: IntegrationDef = IntegrationDef {
             help_url: "https://airtable.com/create/tokens",
         },
     ],
-};
+
+    is_pro: false,};
 
 pub struct Airtable;
 

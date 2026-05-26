@@ -30,7 +30,8 @@ static DEF: IntegrationDef = IntegrationDef {
             help_url: "https://help.salesforce.com/s/articleView?id=sf.user_security_token.htm",
         },
     ],
-};
+
+    is_pro: false,};
 
 pub struct Salesforce;
 

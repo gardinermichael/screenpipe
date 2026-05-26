@@ -26,7 +26,8 @@ static DEF: IntegrationDef = IntegrationDef {
         placeholder: "lexi api key",
         help_url: "https://lexi.ai/settings/api",
     }],
-};
+
+    is_pro: false,};
 
 pub struct Lexi;
 

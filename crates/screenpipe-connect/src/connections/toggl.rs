@@ -21,7 +21,8 @@ static DEF: IntegrationDef = IntegrationDef {
         placeholder: "your-api-token",
         help_url: "https://track.toggl.com/profile",
     }],
-};
+
+    is_pro: false,};
 
 pub struct Toggl;
 

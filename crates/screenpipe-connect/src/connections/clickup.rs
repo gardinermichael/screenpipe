@@ -21,7 +21,8 @@ static DEF: IntegrationDef = IntegrationDef {
         placeholder: "pk_...",
         help_url: "https://clickup.com/api/developer-tools/authentication#personal-token",
     }],
-};
+
+    is_pro: false,};
 
 pub struct ClickUp;
 

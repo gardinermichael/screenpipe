@@ -30,7 +30,8 @@ static DEF: IntegrationDef = IntegrationDef {
             help_url: "https://pushover.net/",
         },
     ],
-};
+
+    is_pro: false,};
 
 pub struct Pushover;
 

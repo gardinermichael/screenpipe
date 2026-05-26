@@ -25,7 +25,8 @@ static DEF: IntegrationDef = IntegrationDef {
         placeholder: "your-loops-api-key",
         help_url: "https://loops.so/docs/api-reference/intro#authentication",
     }],
-};
+
+    is_pro: false,};
 
 pub struct Loops;
 

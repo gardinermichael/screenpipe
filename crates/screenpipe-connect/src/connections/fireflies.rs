@@ -24,7 +24,8 @@ static DEF: IntegrationDef = IntegrationDef {
         placeholder: "fireflies api key",
         help_url: "https://app.fireflies.ai/integrations/custom/fireflies",
     }],
-};
+
+    is_pro: false,};
 
 pub struct Fireflies;
 

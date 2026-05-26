@@ -25,7 +25,8 @@ static DEF: IntegrationDef = IntegrationDef {
         placeholder: "otter api key",
         help_url: "https://otter.ai/account/api",
     }],
-};
+
+    is_pro: false,};
 
 pub struct Otter;
 

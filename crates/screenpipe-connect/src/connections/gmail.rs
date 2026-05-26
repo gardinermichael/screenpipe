@@ -43,7 +43,8 @@ static DEF: IntegrationDef = IntegrationDef {
         Pass `instance=<email>` as a query param on GET endpoints, or include `\"instance\": \"<email>\"` \
         in the JSON body on POST /send. List connected accounts at GET /connections/gmail/instances.",
     fields: &[],
-};
+
+    is_pro: true,};
 
 pub struct Gmail;
 

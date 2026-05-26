@@ -21,7 +21,8 @@ static DEF: IntegrationDef = IntegrationDef {
         placeholder: "brex_...",
         help_url: "https://developer.brex.com/docs/authentication/",
     }],
-};
+
+    is_pro: false,};
 
 pub struct Brex;
 

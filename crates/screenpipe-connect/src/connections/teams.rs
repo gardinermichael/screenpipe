@@ -66,7 +66,8 @@ static DEF: IntegrationDef = IntegrationDef {
         placeholder: "https://outlook.office.com/webhook/...",
         help_url: "https://learn.microsoft.com/en-us/microsoftteams/platform/webhooks-and-connectors/how-to/add-incoming-webhook",
     }],
-};
+
+    is_pro: true,};
 
 pub struct Teams;
 

@@ -1571,16 +1571,18 @@ interface OAuthAccount {
 function OAuthPanel({
   integrationId,
   integrationName,
+  isProRequired,
   onConnected,
   onDisconnected,
 }: {
   integrationId: string;
   integrationName: string;
+  isProRequired: boolean;
   onConnected?: () => void;
   onDisconnected?: () => void;
 }) {
   const { settings } = useSettings();
-  const isPro = !!settings.user?.cloud_subscribed;
+  const userIsPro = !!settings.user?.cloud_subscribed;
   const [status, setStatus] = useState<"idle" | "loading">("idle");
   const [accounts, setAccounts] = useState<OAuthAccount[]>([]);
   const [disconnecting, setDisconnecting] = useState<string | null>(null);
@@ -1698,7 +1700,7 @@ function OAuthPanel({
         </div>
       )}
       <div className="flex flex-wrap gap-2">
-        {!isPro && !connected ? (
+        {!userIsPro && isProRequired && !connected ? (
           <div className="flex flex-col gap-1.5">
             <Button disabled size="sm" className="gap-1.5 h-7 text-xs normal-case font-sans tracking-normal whitespace-nowrap opacity-60">
               <Lock className="h-3 w-3" />pro required
@@ -1752,6 +1754,7 @@ export interface IntegrationInfo {
   fields: IntegrationField[];
   connected: boolean;
   is_oauth: boolean;
+  is_pro: boolean;
 }
 
 // ---------------------------------------------------------------------------
@@ -2520,6 +2523,7 @@ export function ConnectionsSection({ focusConnectionId, focusRequestId = 0 }: Co
             return <OAuthPanel
               integrationId={selectedIntegration.id}
               integrationName={selectedIntegration.name}
+              isProRequired={!!selectedIntegration.is_pro}
               onConnected={() => refreshIntegrationConnection(selectedIntegration.id, true)}
               onDisconnected={() => refreshIntegrationConnection(selectedIntegration.id, false)}
             />;

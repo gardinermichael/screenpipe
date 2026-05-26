@@ -22,7 +22,8 @@ static DEF: IntegrationDef = IntegrationDef {
         placeholder: "https://hooks.zapier.com/hooks/catch/...",
         help_url: "https://zapier.com/help/create/code-webhooks/trigger-zaps-from-webhooks",
     }],
-};
+
+    is_pro: false,};
 
 pub struct Zapier;
 

@@ -21,7 +21,8 @@ static DEF: IntegrationDef = IntegrationDef {
         placeholder: "~/.codex",
         help_url: "https://developers.openai.com/codex/memories",
     }],
-};
+
+    is_pro: false,};
 
 pub struct Codex;
 

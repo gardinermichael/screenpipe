@@ -29,7 +29,8 @@ static DEF: IntegrationDef = IntegrationDef {
         placeholder: "fs_...",
         help_url: "https://app.financialsense.com/settings/api",
     }],
-};
+
+    is_pro: false,};
 
 pub struct FinancialSense;
 

@@ -30,7 +30,8 @@ static DEF: IntegrationDef = IntegrationDef {
             help_url: "https://pipedrive.readme.io/docs/core-api-concepts-about-pipedrive-api",
         },
     ],
-};
+
+    is_pro: false,};
 
 pub struct Pipedrive;
 

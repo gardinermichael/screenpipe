@@ -79,7 +79,8 @@ static DEF: IntegrationDef = IntegrationDef {
           GET  me/chats/{chatId}/messages — read Teams DMs (work/school only). \
           GET  me/joinedTeams — list joined Teams (work/school only).",
     fields: &[],
-};
+
+    is_pro: true,};
 
 pub struct Microsoft365;
 

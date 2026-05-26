@@ -22,7 +22,8 @@ static DEF: IntegrationDef = IntegrationDef {
         placeholder: "https://your-n8n.example.com/webhook/...",
         help_url: "https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.webhook/",
     }],
-};
+
+    is_pro: false,};
 
 pub struct N8n;
 

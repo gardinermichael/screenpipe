@@ -275,7 +275,14 @@ function ConnectionsStrip() {
   const backendIds = new Set(integrations.map((i) => i.id));
   const extraTiles: IntegrationInfo[] = hardcodedTiles
     .filter((h) => !backendIds.has(h.id))
-    .map((h) => ({ ...h, fields: [], is_oauth: false, category: "", description: "" }));
+    .map((h) => ({
+      ...h,
+      fields: [],
+      is_oauth: false,
+      is_pro: false,
+      category: "",
+      description: "",
+    }));
   const allIntegrations = [...mergedBackend, ...extraTiles];
 
   if (allIntegrations.length === 0) return null;

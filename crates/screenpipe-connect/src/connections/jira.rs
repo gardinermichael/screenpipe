@@ -45,7 +45,8 @@ static DEF: IntegrationDef = IntegrationDef {
         POST rest/api/3/issue/{issueKey}/transitions — transition issue status. \
         GET rest/api/3/search?jql=... — search issues with JQL.",
     fields: &[],
-};
+
+    is_pro: true,};
 
 pub struct Jira;
 

@@ -21,7 +21,8 @@ static DEF: IntegrationDef = IntegrationDef {
         placeholder: "pat-na1-...",
         help_url: "https://knowledge.hubspot.com/integrations/how-do-i-get-my-hubspot-api-key",
     }],
-};
+
+    is_pro: false,};
 
 pub struct HubSpot;
 

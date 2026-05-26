@@ -21,7 +21,8 @@ static DEF: IntegrationDef = IntegrationDef {
         placeholder: "grn_...",
         help_url: "https://docs.granola.ai/help-center/sharing/integrations/personal-api",
     }],
-};
+
+    is_pro: false,};
 
 pub struct Granola;
 

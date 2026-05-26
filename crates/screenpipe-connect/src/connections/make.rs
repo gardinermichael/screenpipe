@@ -21,7 +21,8 @@ static DEF: IntegrationDef = IntegrationDef {
         placeholder: "https://hook.us1.make.com/...",
         help_url: "https://www.make.com/en/help/tools/webhooks",
     }],
-};
+
+    is_pro: false,};
 
 pub struct Make;
 

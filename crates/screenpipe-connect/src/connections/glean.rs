@@ -41,7 +41,8 @@ Each document needs: datasource, id, objectType (ScreenCapture|AudioTranscript|I
             help_url: "https://developers.glean.com/api-info/indexing/documents/permissions",
         },
     ],
-};
+
+    is_pro: false,};
 
 pub struct Glean;
 

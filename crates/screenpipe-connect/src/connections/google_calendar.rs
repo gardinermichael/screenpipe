@@ -40,7 +40,8 @@ static DEF: IntegrationDef = IntegrationDef {
         pass `instance=<email>` as a query param (e.g. /events?instance=alice@example.com&hours_ahead=24). \
         Without it, the request fails with an ambiguous-account error.",
     fields: &[],
-};
+
+    is_pro: true,};
 
 pub struct GoogleCalendar;
 

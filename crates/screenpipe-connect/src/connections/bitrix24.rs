@@ -46,7 +46,8 @@ static DEF: IntegrationDef = IntegrationDef {
             help_url: "https://apidocs.bitrix24.com/local-integrations/local-webhooks.html",
         },
     ],
-};
+
+    is_pro: false,};
 
 pub struct Bitrix24;
 

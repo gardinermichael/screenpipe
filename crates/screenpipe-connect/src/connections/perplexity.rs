@@ -21,7 +21,8 @@ static DEF: IntegrationDef = IntegrationDef {
         placeholder: "pplx-...",
         help_url: "https://www.perplexity.ai/account/api/keys",
     }],
-};
+
+    is_pro: false,};
 
 pub struct Perplexity;
 

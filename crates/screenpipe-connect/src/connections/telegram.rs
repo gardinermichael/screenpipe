@@ -30,7 +30,8 @@ static DEF: IntegrationDef = IntegrationDef {
             help_url: "https://core.telegram.org/bots/api#getupdates",
         },
     ],
-};
+
+    is_pro: false,};
 
 pub struct Telegram;
 

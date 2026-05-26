@@ -58,7 +58,8 @@ static DEF: IntegrationDef = IntegrationDef {
         GET /connections/zoom/proxy/users/me/recordings?from=YYYY-MM-DD&to=YYYY-MM-DD — recordings in a date range. \
         Use these to pull authoritative transcripts + attendee lists for meetings the user joined via Zoom; complements local mic capture.",
     fields: &[],
-};
+
+    is_pro: true,};
 
 pub struct Zoom;
 

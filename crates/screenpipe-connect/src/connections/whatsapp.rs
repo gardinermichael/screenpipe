@@ -30,7 +30,8 @@ static DEF: IntegrationDef = IntegrationDef {
             help_url: "https://developers.facebook.com/docs/whatsapp/cloud-api/get-started",
         },
     ],
-};
+
+    is_pro: false,};
 
 pub struct WhatsApp;
 

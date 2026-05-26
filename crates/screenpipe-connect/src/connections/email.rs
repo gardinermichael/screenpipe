@@ -58,7 +58,8 @@ static DEF: IntegrationDef = IntegrationDef {
             help_url: "https://myaccount.google.com/apppasswords",
         },
     ],
-};
+
+    is_pro: false,};
 
 pub struct Email;
 

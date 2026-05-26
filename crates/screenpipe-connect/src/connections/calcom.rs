@@ -40,7 +40,8 @@ static DEF: IntegrationDef = IntegrationDef {
     category: Category::Productivity,
     description: "Access Cal.com bookings and scheduling. Connected via OAuth — use GET https://api.cal.com/v2/... with Authorization: Bearer <access_token> and cal-api-version: 2024-08-13 header.",
     fields: &[],
-};
+
+    is_pro: true,};
 
 pub struct CalCom;
 

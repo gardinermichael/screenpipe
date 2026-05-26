@@ -37,7 +37,8 @@ static DEF: IntegrationDef = IntegrationDef {
             help_url: "https://id.atlassian.com/manage-profile/security/api-tokens",
         },
     ],
-};
+
+    is_pro: false,};
 
 pub struct Confluence;
 

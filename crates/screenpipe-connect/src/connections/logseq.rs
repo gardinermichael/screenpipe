@@ -21,7 +21,8 @@ static DEF: IntegrationDef = IntegrationDef {
         placeholder: "/Users/you/Documents/logseq-graph",
         help_url: "https://docs.logseq.com/",
     }],
-};
+
+    is_pro: false,};
 
 pub struct Logseq;
 

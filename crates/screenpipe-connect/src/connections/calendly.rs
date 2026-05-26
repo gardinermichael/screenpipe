@@ -26,7 +26,8 @@ static DEF: IntegrationDef = IntegrationDef {
     category: Category::Productivity,
     description: "Access Calendly scheduling data and manage bookings. Connected via OAuth — use GET https://api.calendly.com/... with Authorization: Bearer <access_token>.",
     fields: &[],
-};
+
+    is_pro: true,};
 
 pub struct Calendly;
 

@@ -21,7 +21,8 @@ static DEF: IntegrationDef = IntegrationDef {
         placeholder: "0/abc123...",
         help_url: "https://app.asana.com/0/my-apps",
     }],
-};
+
+    is_pro: false,};
 
 pub struct Asana;
 

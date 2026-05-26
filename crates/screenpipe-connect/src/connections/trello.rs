@@ -30,7 +30,8 @@ static DEF: IntegrationDef = IntegrationDef {
             help_url: "https://trello.com/power-ups/admin",
         },
     ],
-};
+
+    is_pro: false,};
 
 pub struct Trello;
 

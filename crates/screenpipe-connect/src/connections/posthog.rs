@@ -37,7 +37,8 @@ static DEF: IntegrationDef = IntegrationDef {
             help_url: "https://posthog.com/docs/api#regions",
         },
     ],
-};
+
+    is_pro: false,};
 
 const DEFAULT_HOST: &str = "us.posthog.com";
 

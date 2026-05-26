@@ -30,7 +30,8 @@ static DEF: IntegrationDef = IntegrationDef {
             help_url: "https://help.obsidian.md/Plugins/Daily+notes",
         },
     ],
-};
+
+    is_pro: false,};
 
 pub struct Obsidian;
 

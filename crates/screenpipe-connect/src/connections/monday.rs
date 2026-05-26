@@ -21,7 +21,8 @@ static DEF: IntegrationDef = IntegrationDef {
         placeholder: "your Monday.com API token",
         help_url: "https://support.monday.com/hc/en-us/articles/360005144659-API-Tokens",
     }],
-};
+
+    is_pro: false,};
 
 pub struct Monday;
 

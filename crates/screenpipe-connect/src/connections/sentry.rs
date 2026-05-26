@@ -30,7 +30,8 @@ static DEF: IntegrationDef = IntegrationDef {
             help_url: "https://docs.sentry.io/product/accounts/membership/",
         },
     ],
-};
+
+    is_pro: false,};
 
 pub struct Sentry;
 

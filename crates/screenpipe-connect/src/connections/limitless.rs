@@ -21,7 +21,8 @@ static DEF: IntegrationDef = IntegrationDef {
         placeholder: "your-limitless-api-key",
         help_url: "https://www.limitless.ai/developers",
     }],
-};
+
+    is_pro: false,};
 
 pub struct Limitless;
 

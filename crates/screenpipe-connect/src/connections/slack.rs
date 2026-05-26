@@ -25,7 +25,8 @@ static DEF: IntegrationDef = IntegrationDef {
         Endpoint: POST /connections/slack/send with {\"text\":\"...\"}. \
         The incoming webhook URL is stored in SecretStore and injected server-side.",
     fields: &[],
-};
+
+    is_pro: true,};
 
 pub struct Slack;
 

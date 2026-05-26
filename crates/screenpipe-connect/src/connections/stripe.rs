@@ -21,7 +21,8 @@ static DEF: IntegrationDef = IntegrationDef {
         placeholder: "sk_live_...",
         help_url: "https://dashboard.stripe.com/apikeys",
     }],
-};
+
+    is_pro: false,};
 
 pub struct Stripe;
 

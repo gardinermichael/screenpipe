@@ -26,7 +26,8 @@ static DEF: IntegrationDef = IntegrationDef {
     description:
         "Create GitHub issues and comments. Connected via OAuth, with repository selection handled by pipe-level settings.",
     fields: &[],
-};
+
+    is_pro: true,};
 
 pub struct GithubIssues;
 

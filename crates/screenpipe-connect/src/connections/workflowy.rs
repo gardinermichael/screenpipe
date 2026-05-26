@@ -21,7 +21,8 @@ static DEF: IntegrationDef = IntegrationDef {
         placeholder: "your Workflowy API key",
         help_url: "https://workflowy.com/api-key",
     }],
-};
+
+    is_pro: false,};
 
 pub struct Workflowy;
 

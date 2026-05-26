@@ -21,7 +21,8 @@ static DEF: IntegrationDef = IntegrationDef {
         placeholder: "https://ntfy.sh/your-topic",
         help_url: "https://docs.ntfy.sh/publish/",
     }],
-};
+
+    is_pro: false,};
 
 pub struct Ntfy;
 

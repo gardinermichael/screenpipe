@@ -24,7 +24,8 @@ static DEF: IntegrationDef = IntegrationDef {
         placeholder: "your-bee-developer-token",
         help_url: "https://docs.bee.computer/docs/developer-mode",
     }],
-};
+
+    is_pro: false,};
 
 const BEE_BASE_URL: &str = "https://app-api-developer.ce.bee.amazon.dev";
 

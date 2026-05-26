@@ -37,7 +37,8 @@ static DEF: IntegrationDef = IntegrationDef {
             help_url: "https://support.zendesk.com/hc/en-us/articles/4408889192858-Managing-access-to-the-Zendesk-API",
         },
     ],
-};
+
+    is_pro: false,};
 
 pub struct Zendesk;
 

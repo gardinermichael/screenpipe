@@ -21,7 +21,8 @@ static DEF: IntegrationDef = IntegrationDef {
         placeholder: "your Todoist API token",
         help_url: "https://todoist.com/help/articles/find-your-api-token-Jpzx9IIlB",
     }],
-};
+
+    is_pro: false,};
 
 pub struct Todoist;
 

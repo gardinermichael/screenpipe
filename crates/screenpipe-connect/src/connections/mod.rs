@@ -108,6 +108,8 @@ pub struct IntegrationDef {
     pub category: Category,
     pub fields: &'static [FieldDef],
     pub description: &'static str,
+    /// When true, OAuth connect requires an active Pro subscription.
+    pub is_pro: bool,
 }
 
 // ---------------------------------------------------------------------------

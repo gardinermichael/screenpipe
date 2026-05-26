@@ -21,7 +21,8 @@ static DEF: IntegrationDef = IntegrationDef {
         placeholder: "lin_api_...",
         help_url: "https://linear.app/settings/api",
     }],
-};
+
+    is_pro: false,};
 
 pub struct Linear;
 

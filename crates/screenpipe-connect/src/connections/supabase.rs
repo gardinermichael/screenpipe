@@ -48,7 +48,8 @@ static DEF: IntegrationDef = IntegrationDef {
         also send `Authorization: Bearer <service_key>` per-request. \
         See https://supabase.com/docs/reference/api for the full reference.",
     fields: &[],
-};
+
+    is_pro: true,};
 
 pub struct Supabase;
 

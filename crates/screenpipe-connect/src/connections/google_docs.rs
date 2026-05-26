@@ -53,7 +53,8 @@ static DEF: IntegrationDef = IntegrationDef {
         Uses drive.file scope — only files the user explicitly opens with screenpipe (e.g. by pasting a Doc URL) or that screenpipe creates are visible; this is intentional privacy design. \
         Multi-account: when more than one Google account is connected, append `?instance=<email>` to any proxy URL to pick which one (the `?` becomes `&` if the path already has a query string).",
     fields: &[],
-};
+
+    is_pro: true,};
 
 pub struct GoogleDocs;
 

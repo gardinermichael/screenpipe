@@ -21,7 +21,8 @@ static DEF: IntegrationDef = IntegrationDef {
         placeholder: "dG9rOi...",
         help_url: "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication/",
     }],
-};
+
+    is_pro: false,};
 
 pub struct Intercom;
 

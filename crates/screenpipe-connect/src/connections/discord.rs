@@ -21,7 +21,8 @@ static DEF: IntegrationDef = IntegrationDef {
         placeholder: "https://discord.com/api/webhooks/...",
         help_url: "https://support.discord.com/hc/en-us/articles/228383668",
     }],
-};
+
+    is_pro: false,};
 
 pub struct Discord;
 

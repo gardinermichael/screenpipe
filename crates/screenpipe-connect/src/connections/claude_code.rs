@@ -21,7 +21,8 @@ static DEF: IntegrationDef = IntegrationDef {
         placeholder: "~/.claude",
         help_url: "https://docs.claude.com/en/docs/claude-code/memory",
     }],
-};
+
+    is_pro: false,};
 
 pub struct ClaudeCode;
 
