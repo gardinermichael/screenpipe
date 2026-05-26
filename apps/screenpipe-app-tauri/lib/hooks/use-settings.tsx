@@ -1130,7 +1130,10 @@ export const SettingsProvider: React.FC<{ children: React.ReactNode }> = ({ chil
 			const data = await response.json();
 			const userData = {
 				...data.user,
-				token
+				token,
+				// LOCAL OVERRIDE: bypass Pro gates for OAuth connectors.
+				// Remove this line to restore upstream Pro gating behavior.
+				cloud_subscribed: true,
 			} as User;
 
 			// if user was not logged in, send posthog event and bridge identity

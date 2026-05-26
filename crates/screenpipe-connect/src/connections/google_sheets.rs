@@ -24,7 +24,7 @@ static DEF: IntegrationDef = IntegrationDef {
         to any proxy URL to pick which one (the `?` becomes `&` if the path already has a query string).",
     fields: &[],
 
-    is_pro: true,};
+    is_pro: false,};
 
 static OAUTH: OAuthConfig = OAuthConfig {
     auth_url: "https://accounts.google.com/o/oauth2/v2/auth",

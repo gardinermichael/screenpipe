@@ -54,7 +54,7 @@ static DEF: IntegrationDef = IntegrationDef {
         Multi-account: when more than one Google account is connected, append `?instance=<email>` to any proxy URL to pick which one (the `?` becomes `&` if the path already has a query string).",
     fields: &[],
 
-    is_pro: true,};
+    is_pro: false,};
 
 pub struct GoogleDocs;
 

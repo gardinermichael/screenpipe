@@ -24,7 +24,7 @@ static DEF: IntegrationDef = IntegrationDef {
     description: "Create pages and databases in Notion. Connected via OAuth — use the Notion API with Bearer token and Notion-Version: 2022-06-28 header.",
     fields: &[],
 
-    is_pro: true,};
+    is_pro: false,};
 
 pub struct Notion;
 

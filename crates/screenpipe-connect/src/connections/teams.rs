@@ -67,7 +67,7 @@ static DEF: IntegrationDef = IntegrationDef {
         help_url: "https://learn.microsoft.com/en-us/microsoftteams/platform/webhooks-and-connectors/how-to/add-incoming-webhook",
     }],
 
-    is_pro: true,};
+    is_pro: false,};
 
 pub struct Teams;
 

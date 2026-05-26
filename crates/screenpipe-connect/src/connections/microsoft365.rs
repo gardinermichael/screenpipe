@@ -80,7 +80,7 @@ static DEF: IntegrationDef = IntegrationDef {
           GET  me/joinedTeams — list joined Teams (work/school only).",
     fields: &[],
 
-    is_pro: true,};
+    is_pro: false,};
 
 pub struct Microsoft365;
 

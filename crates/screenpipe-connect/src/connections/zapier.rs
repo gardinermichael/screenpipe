@@ -23,7 +23,8 @@ static DEF: IntegrationDef = IntegrationDef {
         help_url: "https://zapier.com/help/create/code-webhooks/trigger-zaps-from-webhooks",
     }],
 
-    is_pro: false,};
+    is_pro: false,
+};
 
 pub struct Zapier;
 

@@ -49,7 +49,8 @@ static DEF: IntegrationDef = IntegrationDef {
         See https://supabase.com/docs/reference/api for the full reference.",
     fields: &[],
 
-    is_pro: true,};
+    is_pro: false,
+};
 
 pub struct Supabase;
 

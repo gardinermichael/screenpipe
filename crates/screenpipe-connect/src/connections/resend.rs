@@ -26,7 +26,8 @@ static DEF: IntegrationDef = IntegrationDef {
         help_url: "https://resend.com/docs/dashboard/api-keys/introduction",
     }],
 
-    is_pro: false,};
+    is_pro: false,
+};
 
 pub struct Resend;
 

@@ -59,7 +59,8 @@ static DEF: IntegrationDef = IntegrationDef {
         },
     ],
 
-    is_pro: false,};
+    is_pro: false,
+};
 
 pub struct Email;
 

@@ -26,7 +26,8 @@ static DEF: IntegrationDef = IntegrationDef {
         help_url: "https://loops.so/docs/api-reference/intro#authentication",
     }],
 
-    is_pro: false,};
+    is_pro: false,
+};
 
 pub struct Loops;
 

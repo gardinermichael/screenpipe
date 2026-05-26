@@ -31,7 +31,8 @@ static DEF: IntegrationDef = IntegrationDef {
         GET /connections/vercel/proxy/v6/deployments",
     fields: &[],
 
-    is_pro: true,};
+    is_pro: false,
+};
 
 pub struct Vercel;
 

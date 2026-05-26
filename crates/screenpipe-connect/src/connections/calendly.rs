@@ -27,7 +27,7 @@ static DEF: IntegrationDef = IntegrationDef {
     description: "Access Calendly scheduling data and manage bookings. Connected via OAuth — use GET https://api.calendly.com/... with Authorization: Bearer <access_token>.",
     fields: &[],
 
-    is_pro: true,};
+    is_pro: false,};
 
 pub struct Calendly;
 

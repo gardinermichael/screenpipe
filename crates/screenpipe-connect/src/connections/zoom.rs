@@ -59,7 +59,7 @@ static DEF: IntegrationDef = IntegrationDef {
         Use these to pull authoritative transcripts + attendee lists for meetings the user joined via Zoom; complements local mic capture.",
     fields: &[],
 
-    is_pro: true,};
+    is_pro: false,};
 
 pub struct Zoom;
 

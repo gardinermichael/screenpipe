@@ -44,7 +44,7 @@ static DEF: IntegrationDef = IntegrationDef {
         in the JSON body on POST /send. List connected accounts at GET /connections/gmail/instances.",
     fields: &[],
 
-    is_pro: true,};
+    is_pro: false,};
 
 pub struct Gmail;
 

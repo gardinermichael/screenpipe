@@ -26,7 +26,8 @@ static DEF: IntegrationDef = IntegrationDef {
         The incoming webhook URL is stored in SecretStore and injected server-side.",
     fields: &[],
 
-    is_pro: true,};
+    is_pro: false,
+};
 
 pub struct Slack;
 

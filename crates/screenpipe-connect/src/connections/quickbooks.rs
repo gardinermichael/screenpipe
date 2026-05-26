@@ -24,7 +24,8 @@ static DEF: IntegrationDef = IntegrationDef {
         GET companyinfo/{realmId} — company details.",
     fields: &[],
 
-    is_pro: true,};
+    is_pro: false,
+};
 
 static OAUTH: OAuthConfig = OAuthConfig {
     auth_url: "https://appcenter.intuit.com/connect/oauth2",

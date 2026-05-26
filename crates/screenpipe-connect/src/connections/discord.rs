@@ -22,7 +22,8 @@ static DEF: IntegrationDef = IntegrationDef {
         help_url: "https://support.discord.com/hc/en-us/articles/228383668",
     }],
 
-    is_pro: false,};
+    is_pro: false,
+};
 
 pub struct Discord;
 

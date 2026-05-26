@@ -41,7 +41,7 @@ static DEF: IntegrationDef = IntegrationDef {
         Without it, the request fails with an ambiguous-account error.",
     fields: &[],
 
-    is_pro: true,};
+    is_pro: false,};
 
 pub struct GoogleCalendar;
 
