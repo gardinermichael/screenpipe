@@ -1,6 +1,6 @@
 # Upstream Implementation Issue Template
 
-This template is copied verbatim into every new MIC-* implementation issue body. The base SHA must be refreshed at the time of issue creation: run `git fetch upstream && git rev-parse upstream/main` and replace the pinned SHA below if upstream has advanced since this document was last updated. Current pinned SHA: `dcfda38c0a0191c133d322a695ad05c96f483aa1` (verified 2026-05-26 against `refs/heads/main`).
+This template is copied verbatim into every new MIC-* implementation issue body. The base SHA must be refreshed at the time of issue creation: run `git fetch upstream && git rev-parse upstream/main` and replace the pinned SHA below if upstream has advanced since this document was last updated. Current pinned SHA: `38e0ab491b06a16971a115aa36d73ea5c13ab844` (verified 2026-05-26 against `refs/heads/main`).
 
 ---
 
@@ -22,7 +22,7 @@ repro_gated: <yes|no>
 
 ## Scope allowlist
 Base branch: `upstream/main`
-Base SHA: `dcfda38c0a0191c133d322a695ad05c96f483aa1` (refresh at creation per S0-6)
+Base SHA: `38e0ab491b06a16971a115aa36d73ea5c13ab844` (refresh at creation per S0-6)
 
 Allowed files/globs:
 - <exact path or narrow glob>

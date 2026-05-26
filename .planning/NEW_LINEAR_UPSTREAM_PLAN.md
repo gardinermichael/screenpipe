@@ -52,7 +52,7 @@ Tasks:
 - `[S0-3] Add upstream PR safety checklist for Pro-gate bypass exclusion`
 - `[S0-4] Verify Linear tooling limits and document MCP/script path`
 - `[S0-5] Decide tooling path` — Linear MCP (`mcp__linear__*` tools) is configured and is the chosen path for projects/cycles/relations/labels. Update the issue template to use real Linear edges. **Does not block S1 issue creation** — body-encoded deps are enough to file S1 issues, which are mostly independent. Resolve before any dependent-implementation start (i.e. before `linear-implement` fires on any issue whose `Blocked by` list is non-empty).
-- `[S0-6] Refresh upstream/main base SHA at backlog-creation time` — run `git fetch upstream && git rev-parse upstream/main` and write the result into the issue-body template. Current pinned SHA: `dcfda38c0a0191c133d322a695ad05c96f483aa1` (verified 2026-05-26 against `refs/heads/main`).
+- `[S0-6] Refresh upstream/main base SHA at backlog-creation time` — run `git fetch upstream && git rev-parse upstream/main` and write the result into the issue-body template. Current pinned SHA: `38e0ab491b06a16971a115aa36d73ea5c13ab844` (verified 2026-05-26 against `refs/heads/main`).
 - `[S0-7] File OOB GitHub issues against screenpipe/screenpipe upstream` — see **Out-of-band issues** section. Files **OOB-2 (F3 slow)** and **OOB-3 (F1 onnxruntime)** immediately. **OOB-1 (D1 Zoom)** is repro-gated and does not fire until **OOB-1a** captures a concrete symptom — do not file Zoom upstream without ground truth (per `UPSTREAM_PROPOSAL.md §D1`: "Repro the exact failure mode...before filing").
 
 Acceptance:
