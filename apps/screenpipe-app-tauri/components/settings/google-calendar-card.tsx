@@ -44,7 +44,7 @@ interface CalendarAccount {
 
 export function GoogleCalendarCard({ onConnected, onDisconnected }: { onConnected?: () => void; onDisconnected?: () => void } = {}) {
   const { settings } = useSettings();
-  const isPro = !!settings.user?.cloud_subscribed;
+  const isPro = true; // LOCAL OVERRIDE: bypass per-card Pro gate
   const [accounts, setAccounts] = useState<CalendarAccount[]>([]);
   const [needsAttention, setNeedsAttention] = useState(false);
   const [isConnecting, setIsConnecting] = useState(false);

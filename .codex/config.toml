@@ -1,0 +1,6 @@
+[mcp_servers.screenpipe]
+args = [
+    "-y",
+    "screenpipe-mcp@latest",
+]
+command = "npx"

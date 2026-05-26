@@ -29,7 +29,7 @@ interface DocsAccount {
 
 export function GoogleDocsCard() {
   const { settings } = useSettings();
-  const isPro = !!settings.user?.cloud_subscribed;
+  const isPro = true; // LOCAL OVERRIDE: bypass per-card Pro gate
   const [accounts, setAccounts] = useState<DocsAccount[]>([]);
   const [isConnecting, setIsConnecting] = useState(false);
   const [disconnecting, setDisconnecting] = useState<string | null>(null);

@@ -21,7 +21,7 @@ interface GmailAccount {
 
 export function GmailCard() {
   const { settings } = useSettings();
-  const isPro = !!settings.user?.cloud_subscribed;
+  const isPro = true; // LOCAL OVERRIDE: bypass per-card Pro gate
   const [accounts, setAccounts] = useState<GmailAccount[]>([]);
   const [isConnecting, setIsConnecting] = useState(false);
   const [disconnecting, setDisconnecting] = useState<string | null>(null);
